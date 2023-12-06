@@ -1,0 +1,429 @@
+@import 'config';
+
+@media (max-width: 750px) {
+  body {
+    margin: 0;
+    padding: 30px 0 0 0;
+  }
+  /* NAVBAR */
+  a {
+    color: $primary-color;
+  }
+  nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: $black-color;
+    box-shadow: 1px 1px 5px lighten($gray-color, 10%);
+    z-index: 3;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      overflow: hidden;
+      text-align: center;
+      background-color: $black-color;
+    }
+    a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+    img {
+      width: 80px;
+    }
+    .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+    .menu a {
+      border-radius: 20px;
+    }
+    .menu a:hover {
+      background: $purple-color;
+      transition: .5s;
+      color: $black-color;
+      font-weight: 500;
+    }
+    .menu a:active {
+      background: darken($purple-color, 10%);
+      transition: .2s;
+      color: $black-color;
+      font-weight: 500;
+      transform: scale(.98);
+    }
+    .menu-icon {
+      top: 40px;
+      width: 40px;
+      position: relative;
+      float: right;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav-icon {
+      background: $primary-color;
+      display: block;
+      height: 5px;
+      width: 100px;
+      position: relative;
+      transition: background .5s ease-out;
+      border-radius: 999px;
+    }
+    .nav-icon:before {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .5s ease-out;
+      top: -15px;
+      border-radius: 999px;
+    }
+    .nav-icon:after {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .5s ease-out;
+      top: 15px;
+      border-radius: 999px;
+    }
+    .menu-btn:checked ~ .menu {
+      max-height: 100%;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    a::after {
+      display: none;
+    }
+    a:hover::after {
+      display: none;
+    }
+  }
+    /* HEADER */
+  #header {
+    display: flex;
+    padding: 100px 30px 0 30px;
+    width: 100%;
+  }
+  .left-header-section h1 {
+    padding-top: 0;
+  }
+  .right-header-section {
+    display: none
+  }
+    /* ABOUT */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 200px 30px 0 30px;
+    width: 100%;
+  }
+  .left-about-section {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+   img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .right-about-section {
+    text-align: center;
+    padding-left: 0;
+    h2 {
+      padding-top: 100px;
+    }
+  }
+  /* SERVICES */
+  #services {
+    padding: 200px 30px 0 30px;
+  }
+  .services-container h2 {
+    padding-top: 0;
+    color: $purple-color;
+  }
+  .services-list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-top: 40px;
+  div {
+    padding: 10px;
+  }
+  i {
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+    /* PORTFOLIO */
+  #portfolio {
+    padding: 200px 30px 0 30px;
+  }
+  .portfolio-container h2 {
+    padding-top: 0;
+  }
+  .works-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    padding-top: 40px;
+  }
+    /* CONTACTS */
+  #contacts {
+    display:flex;
+    padding: 200px 30px 0 30px;
+  }
+  .contacts-container {
+    display: inline-block; 
+    h2 {
+      padding-top: 0;
+      padding-bottom: 100px;
+      font-size: 80px;
+      color: $purple-color;
+    }
+  }
+  .left-contacts-section {
+    text-align: center;
+  }
+  .right-contacts-section {
+    display: none;
+  }
+}
+
+@media (min-width: 750.02px) and (max-width: 1800px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+    /* NAVBAR */
+  a {
+    color: $primary-color;
+  }
+  nav {
+    position: fixed;
+    display: block;
+    width: 100%;
+    background-color: $black-color;
+    box-shadow: 1px 1px 5px lighten($gray-color, 10%);
+    z-index: 3;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      overflow: hidden;
+      text-align: center;
+      background-color: $black-color;
+    }
+    a {
+      display: block;
+      padding: 20px;
+      text-decoration: none;
+    }
+    img {
+      width: 120px;
+      margin-left: 150px;
+    }
+    .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+    .menu a {
+      border-radius: 20px;
+    }
+    .menu a:hover {
+      background: $purple-color;
+      transition: .5s;
+      color: $black-color;
+      font-weight: 500;
+    }
+    .menu a:active {
+      background: darken($purple-color, 10%);
+      transition: .2s;
+      color: $black-color;
+      font-weight: 500;
+      transform: scale(.98);
+    }
+    .menu-icon {
+    top: 65px;
+    margin-right: 150px;
+    width: 50px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .nav-icon {
+      background: $primary-color;
+      display: block;
+      height: 5px;
+      width: 100px;
+      position: relative;
+      transition: background .5s ease-out;
+      border-radius: 999px;
+    }
+    .nav-icon:before {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .5s ease-out;
+      top: -15px;
+      border-radius: 999px;
+    }
+    .nav-icon:after {
+      background: $primary-color;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      transition: all .5s ease-out;
+      top: 15px;
+      border-radius: 999px;
+    }
+    .menu-btn:checked ~ .menu {
+      max-height: 100%;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon {
+      background: transparent;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:before {
+      transform: rotate(-45deg);
+      top: 0;
+    }
+    .menu-btn:checked ~ .menu-icon .nav-icon:after {
+      transform: rotate(45deg);
+      top: 0;
+    }
+    a::after {
+      display: none;
+    }
+    a:hover::after {
+      display: none;
+    }
+  }
+    /* HEADER */
+  #header {
+    display: flex;
+    padding: 60px 30px 0 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .right-header-section {
+    display: none
+  }
+    /* ABOUT */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .left-about-section img {
+    width: 100%;
+    height: 100%;
+  }
+  .right-about-section {
+    text-align: center;
+    padding-left: 0;
+    h2 {
+      padding-top: 100px;
+    }
+  }
+  /* SERVICES */
+  #services {
+    padding: 200px 30px 0 30px;
+  }
+  .services-container {
+    text-align: center;
+    h2 {
+      padding-top: 0;
+      font-size: 80px;
+      color: $purple-color;
+    }
+  }
+  .services-list {
+    row-gap: 20px;
+    padding-top: 40px;
+  }
+    /* PORTFOLIO */
+  #portfolio {
+    padding: 200px 30px 0 30px;
+  }
+  .portfolio-container {
+    text-align: center;
+    h2 {
+      padding-top: 100px;
+    }
+  }
+  .works-list {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    row-gap: 20px;
+    padding-top: 40px;
+  }
+    /* CONTACTS */
+  #contacts {
+    display: flex;
+    padding: 200px 30px 0 30px;
+    justify-content: center;
+  }
+  .contacts-container {
+    display: inline-block; 
+    text-align: center;
+    width: 100%;
+    h2 {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      font-size: 80px;
+      color: $purple-color;
+    }
+  }
+  .right-contacts-section {
+    display: none;
+  }
+}
+
+@media (min-width: 1800.02px) and (max-width: 2100px) {
+   /* ABOUT */
+   #about {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .left-about-section img {
+    width: 100%;
+    height: 100%;
+  }
+  .right-about-section {
+    text-align: center;
+    padding-left: 0;
+  }
+  .about-title {
+    padding-top: 100px;
+  }
+}

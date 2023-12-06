@@ -1,0 +1,33 @@
+  // GENERAL //
+$font-stack: Roboto, Arial;
+$black-color: #000;
+$primary-color: #fff;
+$purple-color: #A375FF;
+$hover-container-color: rgb(54, 40, 80);
+$gray-color: #262626;
+
+  // BUTTONS //
+%button {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: none;
+  background-color: $purple-color;
+  font-size: 20px;
+  padding: 15px 50px;
+  border-radius: 5px;
+  color: $primary-color;
+  font-weight: 500;
+  transition: backgroud 0.5s;
+  cursor: pointer;
+  &:hover {
+    background: darken($purple-color, 10%);
+  }
+  &:active {
+    transform: scale(.98);
+  }
+}
+
+.right-about-section button, .left-contacts-section button {
+  @extend %button
+}

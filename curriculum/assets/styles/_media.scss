@@ -1,0 +1,120 @@
+@import 'config';
+
+@media (max-width: 750px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+    /* NAVBAR */
+  nav {
+    padding: 0 10% 0 10%;
+    img {
+      width: 80px;
+    }
+    li {
+      display: block;
+    }
+    a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 5px;
+    }
+    .menu a {
+      border-radius: 10px;
+    }
+    .menu a:hover {
+      background: $purple-color;
+      transition: .5s;
+      color: $black-color;
+      font-weight: 500;
+    }
+    .menu a:active {
+      background: darken($purple-color, 10%);
+      transition: .2s;
+      color: $black-color;
+      font-weight: 500;
+      transform: scale(.98);
+    }
+    a::after {
+      display: none;
+    }
+    a:hover::after {
+      display: none;
+    }
+  }
+  /* CURRICULUM */
+  h1 {
+    margin: 20px 10px 0 10px;
+  }
+  #cv {
+    margin: 20px 10px 0 10px;
+    grid-template-columns: 1fr;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .cv-sections {
+    padding: 0 20px 40px 20px;
+    h2 {
+    text-align: center;
+    }
+  }
+}
+
+@media (min-width: 750.02px) and (max-width: 1800px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+    /* NAVBAR */
+  nav {
+    padding: 0 50px 0 100px;
+    img {
+      width: 100px;
+    }
+    li {
+      display: block;
+    }
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 22px;
+      position: relative;
+      padding: 10px;
+    }   
+    .menu a {
+      border-radius: 15px;
+    }
+    .menu a:hover {
+      background: $purple-color;
+      transition: .5s;
+      color: $black-color;
+      font-weight: 500;
+    }
+    .menu a:active {
+      background: darken($purple-color, 10%);
+      transition: .2s;
+      color: $black-color;
+      font-weight: 500;
+      transform: scale(.98);
+    }
+    a::after {
+      display: none;
+    }
+    a:hover::after {
+      display: none;
+    }
+  }
+  /* CURRICULUM */
+  #cv {
+    margin: 20px 40px 0 40px;
+  }
+  .cv-sections {
+    padding: 0 20px 40px 20px;
+    h2 {
+      text-align: center;
+    }
+  }
+}
