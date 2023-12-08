@@ -28,3 +28,6 @@ My personal website is an online portfolio to showcase my work, skills, and achi
 - JavaScript: A programming language for adding interactivity to web applications;
 - Git: A version control system for tracking changes and collaborating on projects;
 - GitHub Pages: A platform for hosting and deploying web applications.
+
+## Project Link
+You see my personal website by clicking the following link :link: [Michele Zedda Portfolio](https://michelezedda.netlify.app/)
