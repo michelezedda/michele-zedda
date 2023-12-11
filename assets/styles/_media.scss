@@ -31,7 +31,7 @@
       text-decoration: none;
     }
     img {
-      width: 80px;
+      width: 150px;
     }
     .menu {
       clear: both;
@@ -201,7 +201,7 @@
   }
 }
 
-@media (min-width: 750.02px) and (max-width: 1800px) {
+@media (min-width: 750.02px) and (max-width: 1900px) {
   body {
     margin: 0;
     padding: 0;
@@ -232,8 +232,8 @@
       text-decoration: none;
     }
     img {
-      width: 120px;
-      margin-left: 150px;
+      width: 250px;
+      margin-left: 30px;
     }
     .menu {
       clear: both;
@@ -258,7 +258,7 @@
     }
     .menu-icon {
     top: 65px;
-    margin-right: 150px;
+    margin-right: 100px;
     width: 50px;
     position: relative;
     float: right;
@@ -393,7 +393,7 @@
   }
 }
 
-@media (min-width: 1800.02px) and (max-width: 2100px) {
+@media (min-width: 1900.02px) and (max-width: 2100px) {
    /* ABOUT */
    #about {
     display: grid;
