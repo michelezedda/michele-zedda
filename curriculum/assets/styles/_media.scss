@@ -1,6 +1,6 @@
 @import 'config';
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   body {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
     a {
     color: $primary-color;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     position: relative;
     padding: 5px;
     }
@@ -64,7 +64,7 @@
   }
 }
 
-@media (min-width: 750.02px) and (max-width: 1800px) {
+@media (min-width: 850.02px) and (max-width: 1800px) {
   body {
     margin: 0;
     padding: 0;
@@ -81,7 +81,7 @@
     a {
       color: $primary-color;
       text-decoration: none;
-      font-size: 22px;
+      font-size: 25px;
       position: relative;
       padding: 10px;
     }   
